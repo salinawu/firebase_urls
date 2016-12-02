@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>salina's app</title>
+      <meta charset="utf-8">
+      <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    </head>
+    <body>
+
+      <h1 id='header'>Salina's URL Emporium</h1>
+
+      <div>
+        <h3 id='login_header'>Log in or Sign Up</h3>
+        <input type="text" id="email" placeholder="Email"/><input type="text" id="password" type='password' placeholder="Password"/>
+        <button id="login" type="button">Log In</button><button id="signup" type="button">Sign Up</button><button id="logout" type="button" class='btn btn-action hide'>Log Out</button>
+      </div>
+
+      <br></br>
+      <div>
+        <input type="text" id="user_url" placeholder="Your URL"/>
+        <input type="text" id="user_description" placeholder="Your Description"/><button id="url_submit" type="button">Submit URL</button>
+      </div>
+
+      <div>Sort by: <button id="url_sort" type="button">URL</button><button id="time_sort" type="button">Time</button></div>
+
+      <div>
+        <ul id="urls">
+        </ul>
+      </div>
+
+      <script src="app.js"></script>
+
+      <h2 id='one'></h2>
+    </body>
+  </html>
